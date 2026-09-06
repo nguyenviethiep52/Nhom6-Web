@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân - Nguyễn Thị Uyên Nhi</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #ffd6e8, #d9e8ff, #e8dcff);
+        }
+
+        .container {
+            width: 900px;
+            max-width: 100%;
+            background: white;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(80, 60, 120, 0.25);
+        }
+
+        .header {
+            text-align: center;
+            padding: 45px 30px 35px;
+            background: linear-gradient(135deg, #ff9fc5, #a99aff);
+            color: white;
+        }
+
+        .avatar {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            display: block;
+            border: 7px solid rgba(255, 255, 255, 0.85);
+            box-shadow: 0 10px 25px rgba(70, 50, 100, 0.25);
+        }
+
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 17px;
+        }
+
+        .content {
+            padding: 35px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #62468f;
+            font-size: 22px;
+            margin-bottom: 15px;
+            border-left: 5px solid #a78bfa;
+            padding-left: 12px;
+        }
+
+        .intro {
+            color: #555;
+            line-height: 1.8;
+            text-align: justify;
+            background-color: #faf7ff;
+            padding: 18px;
+            border-radius: 15px;
+        }
+
+        .information {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .info-box {
+            padding: 17px;
+            background-color: #fff6fa;
+            border-radius: 15px;
+            border: 1px solid #f2dce7;
+            transition: 0.3s;
+        }
+
+        .info-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(150, 100, 150, 0.15);
+        }
+
+        .info-box strong {
+            display: block;
+            color: #8053a8;
+            margin-bottom: 7px;
+        }
+
+        .info-box span {
+            color: #444;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .tag {
+            padding: 11px 18px;
+            border-radius: 30px;
+            background-color: #f1eaff;
+            color: #6d50a5;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .tag:hover {
+            transform: scale(1.05);
+        }
+
+        .tag.pink {
+            background-color: #ffe6ef;
+            color: #b34f79;
+        }
+
+        .goal {
+            padding: 20px;
+            background: linear-gradient(135deg, #fff3f8, #f3efff);
+            border-radius: 18px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .contact a {
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 25px;
+            background-color: #8d70d5;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .contact a:hover {
+            background-color: #6f54b5;
+            transform: translateY(-3px);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #faf8ff;
+            color: #888;
+            font-size: 14px;
+        }
+
+        @media (max-width: 650px) {
+            body {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 26px;
+            }
+
+            .content {
+                padding: 25px 20px;
+            }
+
+            .information {
+                grid-template-columns: 1fr;
+            }
+
+            .avatar {
+                width: 115px;
+                height: 115px;
+                font-size: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <img src="../img/nhi.png" alt="Nguyễn Thị Uyên Nhi" class="avatar" width="200">
+
+            <h1>Nguyễn Thị Uyên Nhi</h1>
+
+            <p>Sinh viên Đại học Phenikaa</p>
+        </header>
+
+        <main class="content">
+
+            <section class="section">
+                <h2>🌷 Giới thiệu bản thân</h2>
+
+                <p class="intro">
+                    Xin chào! Mình là <strong>Nguyễn Thị Uyên Nhi</strong>,
+                    hiện đang là sinh viên tại Đại học Phenikaa.
+                    Mình là người yêu thích sự sáng tạo, thích học hỏi
+                    những điều mới và luôn cố gắng hoàn thiện bản thân
+                    trong học tập cũng như trong cuộc sống.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>👤 Thông tin cá nhân</h2>
+
+                <div class="information">
+
+                    <div class="info-box">
+                        <strong>Họ và tên</strong>
+                        <span>Nguyễn Thị Uyên Nhi</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Mã sinh viên</strong>
+                        <span>24105736</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Ngày sinh</strong>
+                        <span>27/04/2006</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Giới tính</strong>
+                        <span>Nữ</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Trường</strong>
+                        <span>Đại học Phenikaa</span>
+                    </div>
+
+                    <div class="info-box">
+                        <strong>Ngành học</strong>
+                        <span>Thương mại điện tử</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>💕 Sở thích</h2>
+
+                <div class="skills">
+                    <span class="tag pink">🎬 Xem phim</span>
+                    <span class="tag">🎵 Nghe nhạc</span>
+                    <span class="tag pink">📸 Chụp ảnh</span>
+                    <span class="tag">✈️ Du lịch</span>
+                    <span class="tag pink">🌸 Hoa</span>
+                    <span class="tag">☕ Khám phá</span>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>✨ Sở trường</h2>
+
+                <div class="skills">
+                    <span class="tag">💻 Tin học</span>
+                    <span class="tag pink">🎨 Sáng tạo</span>
+                    <span class="tag">🤝 Làm việc nhóm</span>
+                    <span class="tag pink">📚 Học hỏi</span>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>🎯 Mục tiêu</h2>
+
+                <p class="goal">
+                    Mục tiêu của mình là không ngừng học tập, nâng cao
+                    kiến thức chuyên môn và kỹ năng thực tế. Mình mong
+                    muốn có thể áp dụng những kiến thức đã học vào công
+                    việc trong tương lai và trở thành một người tự tin,
+                    năng động và có trách nhiệm.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>💌 Liên hệ</h2>
+
+                <div class="contact">
+                    <a href="#">Facebook</a>
+                    <a href="#">Email</a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            © 2026 Nguyễn Thị Uyên Nhi | MSSV: 24105736
+        </footer>
+
+    </div>
+
+</body>
+</html>
