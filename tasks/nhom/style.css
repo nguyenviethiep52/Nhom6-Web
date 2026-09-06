@@ -1,0 +1,185 @@
+/* Thiết lập chung */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fc;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+
+/* Khung chính */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Tiêu đề */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* Tiêu đề các phần */
+h2 {
+    color: #2980b9;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+
+/* Danh sách thành viên */
+.member-list {
+    line-height: 2;
+    padding-left: 25px;
+}
+
+
+/* Khu vực thành viên */
+.members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* Thẻ thành viên */
+.member {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fafafa;
+}
+
+.member img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #3498db;
+}
+
+.member h3 {
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.member p {
+    line-height: 1.5;
+}
+
+
+/* Link cá nhân */
+.member a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #3498db;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.member a:hover {
+    background-color: #217dbb;
+}
+
+
+/* Bảng phân công */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+
+/* Form */
+form {
+    max-width: 500px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #217dbb;
+}
+
+
+/* Hiển thị tốt trên điện thoại */
+@media (max-width: 700px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .members {
+        grid-template-columns: 1fr;
+    }
+
+}
